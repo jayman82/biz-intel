@@ -72,5 +72,5 @@ echo
 
 echo "Done. Try one of these next:"
 echo "  - python3 -m tools.presentations <deck.yaml>            # build a deck"
-echo "  - python3 ~/repo/claude-base/tools/claims-audit/validate-claims.py --help"
+echo "  - python3 ~/repo/macrofiche/tools/claims-audit/validate-claims.py --help"
 echo "  - ls -la $REPO_DIR/.claude/skills/                      # confirm linked skills"
