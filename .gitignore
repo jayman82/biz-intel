@@ -15,3 +15,9 @@ Thumbs.db
 # Claude Code
 .claude/*
 !.claude/settings.json
+
+# Phase C LLM gate caches (per-artifact, machine-local; safe to delete).
+# tools/presentations/gates/llm_router.py writes one cache per gate per
+# artifact at <artifact>.llm-<gate>.json so re-runs are cheap and
+# idempotent. They are NOT brand-curated content.
+*.llm-*.json
