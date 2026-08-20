@@ -21,3 +21,17 @@ Thumbs.db
 # artifact at <artifact>.llm-<gate>.json so re-runs are cheap and
 # idempotent. They are NOT brand-curated content.
 *.llm-*.json
+
+# ── publish-check generated artifacts (macrofiche engine) ──
+# print-screen-diff gate output — debug PNGs + manifest written next to the
+# rendered artifact. Regeneratable; untracked orphans trip the dirty-tree
+# precondition in bump-brand-pins.py and stall fleet pin-rolls.
+*.print-diff/
+
+# preview-capture-diff gate output — same shape, same failure mode.
+*.preview-diff/
+
+# FEAT-106 per-artifact quality certificate. Regenerated on every
+# publish-check run against the artifact; safe to delete.
+*.quality-cert.json
+
